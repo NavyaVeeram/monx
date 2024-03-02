@@ -31,25 +31,21 @@ function Footer() {
         <Row className="mt-4">
           <Col md={4}>
             <h5>Useful Links</h5>
-            <ul>
-              <li><a href="#">Cancellation & Refunds</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Upcoming Events</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Resources</a></li>
-            </ul>
+            <p>Cancellation & Refunds</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Upcoming Events</p>
+            <p>Blogs</p>
+            <p>About us</p>
+            <p>Resources</p>
           </Col>
 
           {/* Resorts Section */}
           <Col md={4}>
             <h5>Resorts</h5>
-            <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
-              <li><a href="#">Resorts in Kanakapura Road</a></li>
-              <li><a href="#">Resorts in Sakleshpur</a></li>
-              {/* ... (other links) ... */}
-            </ul>
+            <p>Resorts in Kanakapura Road</p>
+            <p>Resorts in Sakleshpur</p>
+            {/* ... (other content) ... */}
           </Col>
         </Row>
       </Container>
