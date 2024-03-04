@@ -1,56 +1,46 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
-
-function Footer() {
+import logo from '../Images/logo.png'
+const Footer = () => {
   return (
-    <footer className="bg-success text-light p-4">
+    <Container fluid className="bg-success text-light p-5">
       <Container>
         <Row>
-          {/* Contact Information Column */}
-          <Col md={4} className="mb-4">
-            <h5>Contact Us</h5>
-            <p>8909679356</p>
-            <p><a href="mailto:booking@themonxgroup.com">Booking@themonxgroup.com</a></p>
-          </Col>
-
-          {/* Follow Us Column */}
-          <Col md={4} className="mb-4">
-            <h5>Follow Us</h5>
-            {/* Add your social media links or icons here */}
-          </Col>
-
-          {/* Company Information Column */}
           <Col md={4}>
-            <h5>A Unit Of Hurray Holidays Pvt. Ltd.</h5>
-            <p>GSTN- 29AAECH3805M1ZB</p>
-            <p>CIN- U74999KA2017PTC107870</p>
+            <h3>
+            Contact Us - 8909679356</h3>
+<p>Booking@themonxgroup.com</p>
+<p>Follow Us</p>
+<p>A Unit Of Hurray Holidays Pvt. Ltd. GSTN- 29AAECH3805M1ZB CIN- U74999KA2017PTC107870</p>
+<img src={logo} style={{width:'120px',Height:'120px'}} alt='logo'/>
           </Col>
-        </Row>
-
-        {/* Useful Links Section */}
-        <Row className="mt-4">
           <Col md={4}>
             <h5>Useful Links</h5>
-            <p>Cancellation & Refunds</p>
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
-            <p>Upcoming Events</p>
-            <p>Blogs</p>
-            <p>About us</p>
-            <p>Resources</p>
-          </Col>
-
-          {/* Resorts Section */}
+          <p> Useful Links</p>
+<p>Cancellation & Refunds</p>
+<p>Terms & Conditions</p>
+<p>Privacy Policy</p>
+<p>Upcoming Events</p>
+<p>Blogs</p>
+<p>About us</p>   </Col>
           <Col md={4}>
-            <h5>Resorts</h5>
-            <p>Resorts in Kanakapura Road</p>
-            <p>Resorts in Sakleshpur</p>
-            {/* ... (other content) ... */}
+          <h3>Resources</h3>
+<p>Resorts in Kanakapura Road</p>
+<p>Resorts in Sakleshpur</p>
+<p>Homestays in Sakleshpur</p>
+<p>Resorts in Bangalore</p>
+<p>Resorts in Bangalore for team outing</p>
+<p>Resorts near Bangalore for night stay</p>
+<p>Best resorts in Bangalore for family</p>
+<p>Best resorts in Bangalore for day outing</p>
+<p>Camping resorts near Bangalore</p>
+<p>Best resort with activities in Bangalore</p>
           </Col>
         </Row>
       </Container>
-    </footer>
+    </Container>
   );
-}
+};
 
 export default Footer;

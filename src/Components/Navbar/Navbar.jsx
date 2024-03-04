@@ -3,18 +3,21 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
+import logo from '../Images/logo.png';
+import './Navbar.css'
 function Navbar1() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary  fixed-top p-4">
+    <Navbar expand="lg" className="bg-body-tertiary  fixed-top">
       <Container>
-        <Navbar.Brand href="#home" style={{ color: 'green', fontWeight: 'bold' }}>The Monx group</Navbar.Brand>
+        <Navbar.Brand href="#home" style={{ color: 'green', fontWeight: 'bold' }}>
+          <img src={logo} style={{width:'120px',Height:'120px'}} alt='logo'/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link as={Link} to='/' style={{color:'red',fontWeight:'bold'}}>Home</Nav.Link>
+          <Nav className="ms-auto justify-content-center">
+            <Nav.Link as={Link} to='/' style={{color:'red',fontWeight:'bold'}} className='navtext'>Home</Nav.Link>
             
         
-            <NavDropdown    title={<span style={{ color: 'green', fontWeight: 'bold' }}>Our Resorts</span>}  id="basic-nav-dropdown" className='colo'>
+            <NavDropdown className='navtext'   title={<span style={{ color: 'green', fontWeight: 'bold' }}>Our Resorts</span>}  id="basic-nav-dropdown" >
               <NavDropdown.Item href="#action/3.1"><Nav.Link as={Link} to="/monxban" style={{color:'green',fontWeight:'bold'}}>The Monx Group Banglore</Nav.Link></NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
               <Nav.Link as={Link} to="/monxram" style={{color:'green',fontWeight:'bold'}}>The monx group - Ramanagar</Nav.Link>
@@ -26,7 +29,7 @@ function Navbar1() {
               </NavDropdown.Item>
             </NavDropdown>
             
-            <NavDropdown  title={<span style={{ color: 'green', fontWeight: 'bold' }}>Day outing</span>}   id="basic-nav-dropdown" >
+            <NavDropdown className='navtext' title={<span style={{ color: 'green', fontWeight: 'bold' }} className='navtext'>Day outing</span>}   id="basic-nav-dropdown" >
               <NavDropdown.Item href="#action/3.1"><Nav.Link as={Link} to="/outban" style={{color:'green',fontWeight:'bold'}}>Day outing in banglore</Nav.Link></NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
               <Nav.Link as={Link} to="/outram" style={{color:'green',fontWeight:'bold'}}>Day outing in ramanagar</Nav.Link>
@@ -34,18 +37,19 @@ function Navbar1() {
               <NavDropdown.Item href="#action/3.3"><Nav.Link as={Link} to="/outsak" style={{color:'green',fontWeight:'bold'}}>Day outing in Sakleshpur</Nav.Link></NavDropdown.Item>
           
             </NavDropdown>
-            <Nav.Link as={Link} to="/camping" style={{color:'green',fontWeight:'bold'}}>Camping</Nav.Link>
-            <Nav.Link as={Link} to="/corporate" style={{color:'green',fontWeight:'bold'}}>Corporate outing</Nav.Link>
-            <NavDropdown   title={<span style={{ color: 'green', fontWeight: 'bold' }}>Gallery</span>} >
+            <Nav.Link as={Link} to="/camping" style={{color:'green',fontWeight:'bold'}} className='navtext'>Camping</Nav.Link>
+            <Nav.Link as={Link} to="/corporate" style={{color:'green',fontWeight:'bold'}} className='navtext'>Corporate outing</Nav.Link>
+            <NavDropdown className='navtext'  title={<span style={{ color: 'green', fontWeight: 'bold' }} >Gallery</span>} >
               <NavDropdown.Item href="#action/3.1"> <Nav.Link as={Link} to="/gallerybang" style={{color:'green',fontWeight:'bold'}}>Day out in Banglore</Nav.Link>
 </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
               <Nav.Link as={Link} to="/gallerysak" style={{color:'green',fontWeight:'bold'}}>Day Out In Sakleshwar</Nav.Link>
               </NavDropdown.Item>
-              <Nav.Link as={Link} to="/galleryram" style={{color:'green',fontWeight:'bold'}}>Day Out In Ramanager</Nav.Link>
-       
+              <NavDropdown.Item href="#action/3.2">
+              <Nav.Link as={Link} to="/galleryram" style={{color:'green',fontWeight:'bold'}}>Day Out In Ramanagar</Nav.Link>
+              </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/contactform" style={{color:'green',fontWeight:'bold'}}>Contact Us</Nav.Link>
+            <Nav.Link as={Link} to="/contactform" style={{color:'green',fontWeight:'bold'}} className='navtext'>Contact Us</Nav.Link>
 
           </Nav>
         </Navbar.Collapse>

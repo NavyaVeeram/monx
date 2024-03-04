@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar1 from '../Navbar'
+import Navbar1 from '../Navbar/Navbar'
 
-function OutRam() {
+function OutSak() {
     return (
         <div>
             <Navbar1/>
@@ -9,4 +9,4 @@ function OutRam() {
     )
 }
 
-export default OutRam
+export default OutSak

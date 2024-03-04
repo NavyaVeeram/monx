@@ -1,0 +1,13 @@
+
+
+.card-hover {
+    transition: transform 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.card-hover:hover {
+    transform: scale(1.1);
+}
+.btn-yellow:hover{
+color:black;
+background-color: yellowgreen;
+}

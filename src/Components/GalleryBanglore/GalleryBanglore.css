@@ -1,0 +1,14 @@
+/* Add this to your CSS file or style block */
+.image-container {
+    margin-bottom: 20px; /* Adjust the margin as needed */
+    overflow: hidden;
+    border-radius: 8px; /* Add rounded corners to the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Make sure the image respects the container's rounded corners */
+  }
+  
