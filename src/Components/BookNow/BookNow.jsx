@@ -46,7 +46,8 @@ const BookingForm = () => {
   };
 
   return (
-    <Form onSubmit={handleSubmit} className='w-50 mx-auto border border-primary rounded p-2 m-4' >
+    <Form onSubmit={handleSubmit} className='w-50 mx-auto border border-primary rounded p-2 ' style={{margin:'150px'}}
+    >
       <h4>payment details</h4>
       <div className='d-flex  m-2'>
         <div className='w-50'><label htmlFor="fullName">Full Name:</label></div>

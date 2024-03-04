@@ -1,24 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Button, Card } from 'react-bootstrap';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
-import ComplementaryActivities from '../ComplemetaryActivities/ComplementaryActivities';
-import PaidActivities from '../PaidActivities/PaidActivities';
-const MonxRam = () => {
+const OurResortsPackages = () => {
 
     
   return (
     <>
    
-   <Container fluid style={{marginTop:'120px'}}>
-   <Row >
-    <Col className='p-0'><img src='https://static.wixstatic.com/media/2fddf9_4e693c3284094dfe8bf7cf5ea7dd7bfa~mv2.jpg/v1/fill/w_948,h_845,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2fddf9_4e693c3284094dfe8bf7cf5ea7dd7bfa~mv2.jpg'className='w-100'/>
-   </Col>
-   <Col className='p-0'><img src='https://static.wixstatic.com/media/2fddf9_f2a086e7fd324dbd895415f50abdbf05~mv2.jpg/v1/fill/w_948,h_845,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2fddf9_f2a086e7fd324dbd895415f50abdbf05~mv2.jpg' className='w-100'/>
-     </Col> </Row>
-      </Container>
+
       <Container className="my-5">
         <h2>Featured Destinations</h2>
         <div className="row">
@@ -67,10 +57,9 @@ const MonxRam = () => {
         </div>
        
        </Container>
-<ComplementaryActivities/>
-<PaidActivities/>
+
        </>
   );
 };
 
-export default MonxRam;
+export default OurResortsPackages;

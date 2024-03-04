@@ -1,0 +1,23 @@
+.image-carousel-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .image-carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%; /* Ensure each item takes the full width of the container */
+  }
+  
+  .active {
+    opacity: 1; /* You can add additional styling for the active item */
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  

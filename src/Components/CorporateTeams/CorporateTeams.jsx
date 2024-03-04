@@ -8,7 +8,7 @@ import Bang1 from '../GalleryBang/Bang1.jpeg';
 function CorporateTeams() {
   const teamBuildingData = [
     { title: 'Conference hall', image: Bang1 },
-    { title: 'Conference hall', image: Bang1 },
+    { title: ' hall', image: Bang1 },
     { title: 'Conference hall', image: Bang1 },
     { title: 'Conference hall', image: Bang1 },
     // Add other team building activities similarly
@@ -32,7 +32,7 @@ function CorporateTeams() {
         ))}
       </Row>
       </Container>
-      <Container fluid className='mt-2'>
+      <Container fluid className='mt-5'>
       <Row >
         {teamBuildingData.map((activity, index) => (
           <Col key={index} md={3}>

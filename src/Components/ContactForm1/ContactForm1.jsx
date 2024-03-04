@@ -13,7 +13,7 @@ function ContactForm1() {
     };
     return (
         <div>
-               <h2 className="text-center" style={{ color:'green',paddingTop:'100px'}}>Contact Us</h2>
+               <h2 className="text-center" style={{ color:'green'}}>Contact Us</h2>
 
 
 <Container className='d-flex justify-content-center align-items-center contact-bg p-3' style={containerStyle}>
